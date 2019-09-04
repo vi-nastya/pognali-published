@@ -5279,7 +5279,7 @@ input[type="checkbox"]:checked + .companion-filters__label::after {
           justify-content: center; }
   @media (min-width: 768px) {
     .calendar__month-wrapper {
-      width: 531px; } }
+      width: 533px; } }
   @media (min-width: 1440px) {
     .calendar__month-wrapper {
       width: 1000px; } }
@@ -6132,7 +6132,7 @@ input[type="checkbox"]:checked + .companion-filters__label::after {
   margin-bottom: 22px; }
   @media (min-width: 768px) {
     .trip-form__calendar {
-      width: 531px;
+      width: 533px;
       -webkit-box-pack: start;
           -ms-flex-pack: start;
               justify-content: flex-start;
