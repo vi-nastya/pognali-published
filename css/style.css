@@ -1523,16 +1523,7 @@ html {
       margin-bottom: 150px;
       -webkit-box-ordinal-group: 0;
           -ms-flex-order: -1;
-              order: -1; }
-      .destinations__list::after {
-        bottom: 0;
-        left: 0;
-        position: absolute;
-        content: "";
-        width: 560px;
-        height: 80px;
-        background-image: -webkit-gradient(linear, left bottom, left top, from(#edeff6), to(rgba(255, 255, 255, 0)));
-        background-image: linear-gradient(to top, #edeff6, rgba(255, 255, 255, 0)); } }
+              order: -1; } }
 
 .destinations__header {
   margin: 0;
@@ -1586,6 +1577,18 @@ html {
 .destinations__item {
   margin: 0 auto;
   margin-bottom: 10px; }
+  @media (min-width: 1440px) {
+    .destinations__item {
+      position: relative; }
+      .destinations__item:nth-last-of-type(1)::after {
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        content: "";
+        width: 560px;
+        height: 80px;
+        background-image: -webkit-gradient(linear, left bottom, left top, from(#edeff6), to(rgba(255, 255, 255, 0)));
+        background-image: linear-gradient(to top, #edeff6, rgba(255, 255, 255, 0)); } }
 
 .destinations__button {
   width: 270px;
@@ -1618,7 +1621,7 @@ html {
   @media (min-width: 1440px) {
     .country {
       width: 560px;
-      height: 140px; } }
+      min-height: 140px; } }
 
 .country__wrapper {
   position: relative;
@@ -4731,7 +4734,8 @@ input[type="checkbox"]:checked + .companion-filters__label::after {
       margin-top: 0; } }
 
 .profile__tags-description {
-  top: 10px; }
+  top: 10px;
+  min-width: 50px; }
   @media (min-width: 768px) {
     .profile__tags-description {
       top: auto;
@@ -4800,8 +4804,7 @@ input[type="checkbox"]:checked + .companion-filters__label::after {
   @media (min-width: 768px) {
     .profile__transport {
       position: absolute;
-      padding-top: 40px;
-      padding-bottom: 25px;
+      padding-top: 30px;
       top: 63px;
       left: 230px;
       width: 308px;
@@ -4814,6 +4817,7 @@ input[type="checkbox"]:checked + .companion-filters__label::after {
   @media (min-width: 1440px) {
     .profile__transport {
       position: relative;
+      padding-top: 20px;
       top: auto;
       left: auto;
       margin-left: auto;
@@ -5852,7 +5856,14 @@ input[type="checkbox"]:checked + .companion-filters__label::after {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
-                flex-direction: column; } }
+                flex-direction: column; }
+      .trip-form__step--plans {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap; } }
 
 .trip-form__step-name {
   margin: 0;
@@ -5983,13 +5994,17 @@ input[type="checkbox"]:checked + .companion-filters__label::after {
   position: relative;
   padding: 0;
   border: none; }
+  .trip-form__field--country {
+    width: 220px; }
   @media (min-width: 768px) {
     .trip-form__field--companions {
       margin-bottom: 95px; }
     .trip-form__field--kids {
       position: absolute;
       top: 417px;
-      left: 41; } }
+      left: 41; }
+    .trip-form__field--country {
+      width: 500px; } }
   @media (min-width: 1440px) {
     .trip-form__field {
       width: 480px; }
@@ -5998,7 +6013,9 @@ input[type="checkbox"]:checked + .companion-filters__label::after {
         left: auto;
         right: -80px; }
       .trip-form__field--companions {
-        margin-bottom: 0; } }
+        margin-bottom: 0; }
+      .trip-form__field--country {
+        width: 730px; } }
 
 .trip-form__label {
   width: 100%;
@@ -6258,7 +6275,6 @@ input[type="checkbox"]:checked + .companion-filters__label::after {
 
 /* STEP 3*/
 .trip-form__country-label {
-  position: relative;
   width: 100%;
   margin-bottom: 15px;
   padding-right: 10px;
@@ -6268,6 +6284,8 @@ input[type="checkbox"]:checked + .companion-filters__label::after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  overflow: hidden;
+  white-space: nowrap;
   color: #1d2e5b;
   font-size: 18px;
   font-weight: 500;
@@ -6293,6 +6311,7 @@ input[type="checkbox"]:checked + .companion-filters__label::after {
   @media (min-width: 768px) {
     .trip-form__country-label {
       margin-bottom: 29px;
+      padding-right: 0px;
       font-size: 30px;
       font-weight: 700;
       line-height: 0.6; }
