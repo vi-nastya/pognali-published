@@ -814,7 +814,7 @@ html {
   display: none; }
 
 .header--open-menu .header__nav-toggle {
-  background-image: url("../../img/close.svg");
+  background-image: url("../img/close.svg");
   background-size: 19px 19px;
   background-position: center;
   background-repeat: no-repeat; }
@@ -1359,7 +1359,7 @@ html {
       padding-left: 74px;
       padding-right: 74px;
       padding-bottom: 48px;
-      background-image: url("../img/about-tablet@1x.png"), url("../../img/back-about.png");
+      background-image: url("../img/about-tablet@1x.png"), url("../img/back-about.png");
       background-repeat: no-repeat, no-repeat;
       background-size: 375px 545px, 688px 213px;
       background-position: 385px 145px, 40px 90px;
@@ -1369,7 +1369,7 @@ html {
       padding-left: 135px;
       padding-right: 60px;
       padding-bottom: 122px;
-      background-image: url("../img/about-desktop@1x.png"), url("../../img/back-about.png");
+      background-image: url("../img/about-desktop@1x.png"), url("../img/back-about.png");
       background-size: 645px 665px, 213px 213px;
       background-position: 745px 85px, 60px 60px;
       background-repeat: no-repeat, no-repeat; } }
@@ -1476,7 +1476,7 @@ html {
   border-radius: 0 0 30px 30px; }
   @media (min-width: 768px) {
     .destinations__inner {
-      background-image: url("../../img/flags-back@1x.png"), url("../../img/back-destinations.png");
+      background-image: url("../img/flags-back@1x.png"), url("../img/back-destinations.png");
       background-repeat: no-repeat, no-repeat;
       background-size: 289px 575px, 141px 141px;
       background-position: 438px 47px, 40px 410px;
@@ -1491,7 +1491,7 @@ html {
           flex-wrap: wrap;
       -ms-flex-line-pack: start;
           align-content: flex-start;
-      background-image: url("../../img/flags-back@1x.png"), url("../../img/back-destinations.png");
+      background-image: url("../img/flags-back@1x.png"), url("../img/back-destinations.png");
       background-repeat: no-repeat, no-repeat;
       background-size: 289px 575px, 141px 141px;
       background-position: 1090px 90px, 58px 90px; } }
@@ -1736,7 +1736,7 @@ html {
     left: 5px;
     width: 11px;
     height: 11px;
-    background-image: url("../../img/user.svg");
+    background-image: url("../img/user.svg");
     opacity: 0.3; }
     @media (min-width: 768px) {
       .country__visitors::before {
@@ -1896,7 +1896,7 @@ html {
   padding-right: 25px;
   padding-bottom: 30px;
   border-radius: 0 0 30px 30px;
-  background-image: url("../../img/rogovaya-back-mobile@1x.png"), url("../../img/smolov-back-desktop@1x.png");
+  background-image: url("../img/rogovaya-back-mobile@1x.png"), url("../img/smolov-back-desktop@1x.png");
   background-repeat: no-repeat, no-repeat;
   background-size: 61px 71px, 143px 143px;
   background-position: -5px 311px, 152px 40px; }
@@ -1906,7 +1906,7 @@ html {
       padding-left: 73px;
       padding-right: 72px;
       padding-bottom: 88px;
-      background-image: url("../../img/rogovaya-back-desktop@1x.png"), url("../../img/smolov-back-desktop@1x.png"), url("../../img/back-companions.png");
+      background-image: url("../img/rogovaya-back-desktop@1x.png"), url("../img/smolov-back-desktop@1x.png"), url("../img/back-companions.png");
       background-repeat: no-repeat, no-repeat, no-repeat;
       background-size: 285px 285px, 143px 143px, 213px 213px;
       background-position: 408px 80px, 40px 427px, 40px 80px;
@@ -1917,7 +1917,7 @@ html {
       padding-left: 130px;
       padding-bottom: 135px;
       padding-right: 130px;
-      background-image: url("../../img/rogovaya-back-desktop@1x.png"), url("../../img/smolov-back-desktop@1x.png"), url("../../img/back-companions.png");
+      background-image: url("../img/rogovaya-back-desktop@1x.png"), url("../img/smolov-back-desktop@1x.png"), url("../img/back-companions.png");
       background-repeat: no-repeat, no-repeat, no-repeat;
       background-size: 285px 285px, 143px 143px, 213px 213px;
       background-position: 190px 385px, 547px 135px, 40px 80px; } }
@@ -2839,19 +2839,19 @@ html {
 .map {
   margin-top: -40px;
   min-height: 352px;
-  background-image: url("../../img/map-with-marker-mobile.png");
+  background-image: url("../img/map-with-marker-mobile.png");
   background-position: center;
   background-repeat: no-repeat; }
   @media (min-width: 768px) {
     .map {
       min-height: 541px;
-      background-image: url("../../img/map-with-marker-tablet.png");
+      background-image: url("../img/map-with-marker-tablet.png");
       background-position: center;
       background-repeat: no-repeat; } }
   @media (min-width: 1440px) {
     .map {
       min-height: 476px;
-      background-image: url("../../img/map-with-marker-desktop.png");
+      background-image: url("../img/map-with-marker-desktop.png");
       background-position: center;
       background-repeat: no-repeat; } }
 
@@ -2964,7 +2964,7 @@ html {
     left: 16px;
     width: 14px;
     height: 22px;
-    background-image: url("../../img/contacts-location.svg");
+    background-image: url("../img/contacts-location.svg");
     background-repeat: no-repeat; }
     @media (min-width: 768px) {
       .location__address::after {
@@ -3087,7 +3087,7 @@ html {
         content: "";
         width: 32px;
         height: 16px;
-        background-image: url("../../img/return.svg");
+        background-image: url("../img/return.svg");
         top: 0;
         right: 0; } }
 
@@ -3168,7 +3168,7 @@ html {
     height: 10px;
     top: 5px;
     left: 0;
-    background-image: url("../../img/filter.svg");
+    background-image: url("../img/filter.svg");
     background-repeat: no-repeat; }
     @media (min-width: 1440px) {
       .country-filters__header::before {
@@ -3216,7 +3216,7 @@ html {
       height: 3px;
       top: 6px;
       right: 5px;
-      background-image: url("../../img/dots.svg");
+      background-image: url("../img/dots.svg");
       background-repeat: no-repeat; }
       @media (min-width: 768px) {
         .country-filters__button--show::before {
@@ -3236,7 +3236,7 @@ html {
     height: 12px;
     top: 2px;
     right: 2px;
-    background-image: url("../../img/filter-close.svg");
+    background-image: url("../img/filter-close.svg");
     background-repeat: no-repeat; }
     @media (min-width: 768px) {
       .country-filters__button--hide::before {
@@ -4090,7 +4090,7 @@ input[type="checkbox"]:checked + .companion-filters__label::after {
     height: 18px;
     top: 5px;
     left: 0;
-    background-image: url("../../img/show-more-plus.svg");
+    background-image: url("../img/show-more-plus.svg");
     background-repeat: no-repeat; }
     @media (min-width: 768px) {
       .found-companions__button::before {
@@ -5600,7 +5600,7 @@ input[type="checkbox"]:checked + .companion-filters__label::after {
     z-index: 3;
     width: 15px;
     height: 15px;
-    background-image: url("../../img/dropdown-form.svg");
+    background-image: url("../img/dropdown-form.svg");
     background-repeat: no-repeat;
     background-position: 1px 4px;
     background-size: 12px 7px;
@@ -5672,7 +5672,7 @@ input[type="checkbox"]:checked + .companion-filters__label::after {
 
 .country-select--empty .country-select__value-wrapper:active .country-select__button--select,
 .country-select--active .country-select__button--select {
-  background-image: url("../../img/close-white.svg");
+  background-image: url("../img/close-white.svg");
   background-color: #1d2e5b;
   background-size: 9px 9px; }
   @media (min-width: 768px) {
@@ -5731,7 +5731,7 @@ input[type="checkbox"]:checked + .companion-filters__label::after {
     right: 14px;
     width: 14px;
     height: 14px;
-    background-image: url("../../img/qty-plus.svg");
+    background-image: url("../img/qty-plus.svg");
     background-repeat: no-repeat;
     opacity: 0.2; }
   @media (min-width: 768px) {
@@ -6122,10 +6122,10 @@ input[type="checkbox"]:checked + .companion-filters__label::after {
   .trip-form__button:active {
     opacity: 0.1; }
   .trip-form__button--increase {
-    background-image: url("../../img/qty-plus.svg");
+    background-image: url("../img/qty-plus.svg");
     background-position: 3px 13px; }
   .trip-form__button--decrease {
-    background-image: url("../../img/qty-minus.svg");
+    background-image: url("../img/qty-minus.svg");
     background-position: 20px 13px; }
   @media (min-width: 768px) {
     .trip-form__button {
