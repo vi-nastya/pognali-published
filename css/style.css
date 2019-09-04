@@ -982,6 +982,9 @@ html {
   @media (min-width: 1440px) {
     .intro {
       min-width: 1440px; } }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .intro {
+      background-image: url("../img/globe-back-mobile@2x.jpg"); } }
   @media (min-width: 768px) {
     .intro {
       background-color: #192144;
@@ -989,6 +992,9 @@ html {
       background-repeat: no-repeat;
       background-position: -360px 265px;
       background-size: auto; } }
+  @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 768px) and (min-resolution: 144dpi), (min-width: 768px) and (min-resolution: 1.5dppx) {
+    .intro {
+      background-image: url("../img/globe-back-tablet@2x.jpg"); } }
   @media (min-width: 1440px) {
     .intro {
       background-color: #161c35;
@@ -996,6 +1002,9 @@ html {
       background-image: url("../img/globe-back-desktop@1x.jpg");
       background-repeat: no-repeat;
       background-position: -180px -110px; } }
+  @media (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1440px) and (min-resolution: 144dpi), (min-width: 1440px) and (min-resolution: 1.5dppx) {
+    .intro {
+      background-image: url("../img/globe-back-desktop@2x.jpg"); } }
 
 .intro__inner {
   min-height: 700px;
@@ -1352,6 +1361,9 @@ html {
   background-position: 18px bottom;
   color: #ffffff;
   border-radius: 0 0 30px 30px; }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .about__inner {
+      background-image: url("../img/about-mobile@2x.jpg"); } }
   @media (min-width: 768px) {
     .about__inner {
       padding-top: 135px;
@@ -1363,6 +1375,9 @@ html {
       background-size: 375px 545px, 688px 213px;
       background-position: 385px 145px, 40px 90px;
       border-radius: 0 0 60px 60px; } }
+  @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 768px) and (min-resolution: 144dpi), (min-width: 768px) and (min-resolution: 1.5dppx) {
+    .about__inner {
+      background-image: url("../img/about-tablet@2x.png"), url("../img/back-about.png"); } }
   @media (min-width: 1440px) {
     .about__inner {
       padding-left: 135px;
@@ -1372,6 +1387,9 @@ html {
       background-size: 645px 665px, 213px 213px;
       background-position: 745px 85px, 60px 60px;
       background-repeat: no-repeat, no-repeat; } }
+  @media (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1440px) and (min-resolution: 144dpi), (min-width: 1440px) and (min-resolution: 1.5dppx) {
+    .about__inner {
+      background-image: url("../img/about-desktop@2x.png"), url("../img/back-about.png"); } }
 
 .about__header {
   margin: 0;
@@ -1482,6 +1500,9 @@ html {
       padding-top: 72px;
       padding-bottom: 80px;
       border-radius: 0 0 60px 60px; } }
+  @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 768px) and (min-resolution: 144dpi), (min-width: 768px) and (min-resolution: 1.5dppx) {
+    .destinations__inner {
+      background-image: url("../img/flags-back@2x.png"), url("../img/back-destinations.png"); } }
   @media (min-width: 1440px) {
     .destinations__inner {
       height: 750px;
@@ -1494,6 +1515,9 @@ html {
       background-repeat: no-repeat, no-repeat;
       background-size: 289px 575px, 141px 141px;
       background-position: 1090px 90px, 58px 90px; } }
+  @media (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1440px) and (min-resolution: 144dpi), (min-width: 1440px) and (min-resolution: 1.5dppx) {
+    .destinations__inner {
+      background-image: url("../img/flags-back@2x.png"), url("../img/back-destinations.png"); } }
 
 .destinations__list {
   padding: 0;
@@ -1673,6 +1697,9 @@ html {
 
 .country__flag-wrapper {
   position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   top: -12px;
   left: 25px;
   width: 35px;
@@ -1902,6 +1929,9 @@ html {
   background-repeat: no-repeat, no-repeat;
   background-size: 61px 71px, 143px 143px;
   background-position: -5px 311px, 152px 40px; }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .companions__inner {
+      background-image: url("../img/rogovaya-back-mobile@2x.png"), url("../img/smolov-back-desktop@2x.png"); } }
   @media (min-width: 768px) {
     .companions__inner {
       padding-top: 140px;
@@ -1913,6 +1943,9 @@ html {
       background-size: 285px 285px, 143px 143px, 213px 213px;
       background-position: 408px 80px, 40px 427px, 40px 80px;
       border-radius: 0 0 60px 60px; } }
+  @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 768px) and (min-resolution: 144dpi), (min-width: 768px) and (min-resolution: 1.5dppx) {
+    .companions__inner {
+      background-image: url("../img/rogovaya-back-desktop@1x.png"), url("../img/smolov-back-desktop@2x.png"), url("../img/back-companions.png"); } }
   @media (min-width: 1440px) {
     .companions__inner {
       padding-top: 130px;
@@ -1923,6 +1956,9 @@ html {
       background-repeat: no-repeat, no-repeat, no-repeat;
       background-size: 285px 285px, 143px 143px, 213px 213px;
       background-position: 190px 385px, 547px 135px, 40px 80px; } }
+  @media (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1440px) and (min-resolution: 144dpi), (min-width: 1440px) and (min-resolution: 1.5dppx) {
+    .companions__inner {
+      background-image: url("../img/rogovaya-back-desktop@2x.png"), url("../img/smolov-back-desktop@2x.png"), url("../img/back-companions.png"); } }
 
 .companions__header {
   margin: 0;
@@ -2159,6 +2195,9 @@ html {
           justify-content: center; }
 
 .companion__countries-flag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-right: 19px;
   width: 35px;
   height: 24px; }
