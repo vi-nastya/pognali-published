@@ -2414,6 +2414,9 @@ html {
     background-color: #ffbd30; }
   .plan__feature-item:nth-of-type(3)::before {
     background-color: #ffd74b; }
+  @media (min-width: 768px) {
+    .plan__feature-item .plan__feature-price {
+      margin-left: auto; } }
   .plan__feature-item--business {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2428,9 +2431,9 @@ html {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
       -webkit-box-align: start;
           -ms-flex-align: start;
               align-items: flex-start;
@@ -4734,7 +4737,8 @@ input[type="checkbox"]:checked + .companion-filters__label::after {
 
 .profile__tags-description {
   top: 10px;
-  min-width: 50px; }
+  width: 50px;
+  background-color: #edeff6; }
   @media (min-width: 768px) {
     .profile__tags-description {
       top: auto;
@@ -5273,6 +5277,12 @@ input[type="checkbox"]:checked + .companion-filters__label::after {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
+  @media (min-width: 768px) {
+    .calendar__month-wrapper {
+      width: 531px; } }
+  @media (min-width: 1440px) {
+    .calendar__month-wrapper {
+      width: 1000px; } }
   .calendar__month-wrapper::before {
     position: absolute;
     content: "";
@@ -5703,76 +5713,6 @@ input[type="checkbox"]:checked + .companion-filters__label::after {
 .country-select--empty .country-select__value-wrapper::after {
   display: none; }
 
-.trip-form__add-country {
-  position: relative;
-  width: 220px;
-  margin-bottom: 25px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-left: 12px;
-  padding-right: 50px;
-  font-family: "BloggerSans", "Arial", sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.29;
-  letter-spacing: 1.4px;
-  text-transform: uppercase;
-  text-align: left;
-  color: #1d2e5b;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer; }
-  .trip-form__add-country:hover, .trip-form__add-country:focus {
-    background-color: #edeff6; }
-  .trip-form__add-country:active {
-    color: rgba(29, 46, 91, 0.3);
-    background-color: #edeff6; }
-  .trip-form__add-country::after {
-    position: absolute;
-    content: "";
-    top: 14px;
-    right: 14px;
-    width: 14px;
-    height: 14px;
-    background-image: url("../img/qty-plus.svg");
-    background-repeat: no-repeat;
-    opacity: 0.2; }
-  @media (min-width: 768px) {
-    .trip-form__add-country {
-      width: 370px;
-      padding-top: 36px;
-      padding-left: 26px;
-      padding-bottom: 20px;
-      padding-right: 60px;
-      font-size: 20px;
-      line-height: 1;
-      letter-spacing: 2px; }
-      .trip-form__add-country::before {
-        position: absolute;
-        content: "";
-        top: 27px;
-        right: -30px;
-        width: 15px;
-        height: 15px;
-        background-color: #edeff6;
-        border: 1px solid #cbced9;
-        border-radius: 50%; }
-      .trip-form__add-country::after {
-        width: 20px;
-        height: 20px;
-        right: 26px;
-        top: 25px; } }
-  @media (min-width: 1440px) {
-    .trip-form__add-country {
-      width: 730px; }
-      .trip-form__add-country::before {
-        right: -57px; }
-      .trip-form__add-country::after {
-        width: 18px;
-        height: 18px;
-        right: 27px;
-        top: 26px; } }
-
 .country-select__letters {
   position: absolute;
   z-index: 100;
@@ -6190,9 +6130,19 @@ input[type="checkbox"]:checked + .companion-filters__label::after {
 
 .trip-form__calendar {
   margin-bottom: 22px; }
+  @media (min-width: 768px) {
+    .trip-form__calendar {
+      width: 531px;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start; } }
   @media (min-width: 1440px) {
     .trip-form__calendar {
-      margin-bottom: 0; } }
+      margin-bottom: 0;
+      width: 1000px; } }
 
 @media (min-width: 768px) {
   .trip-form__dates {
@@ -6299,6 +6249,77 @@ input[type="checkbox"]:checked + .companion-filters__label::after {
 @media (min-width: 1440px) {
   .trip-form__selects {
     margin-bottom: 30px; } }
+
+.trip-form__add-country {
+  position: relative;
+  width: 220px;
+  margin-bottom: 25px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 12px;
+  padding-right: 50px;
+  font-family: "BloggerSans", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.29;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  text-align: left;
+  color: #1d2e5b;
+  background: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer; }
+  .trip-form__add-country:hover, .trip-form__add-country:focus {
+    background-color: #edeff6; }
+  .trip-form__add-country:active {
+    color: rgba(29, 46, 91, 0.3);
+    background-color: #edeff6; }
+  .trip-form__add-country::after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 14px;
+    width: 14px;
+    height: 14px;
+    background-image: url("../img/qty-plus.svg");
+    background-repeat: no-repeat;
+    opacity: 0.2; }
+  @media (min-width: 768px) {
+    .trip-form__add-country {
+      width: 370px;
+      padding-top: 36px;
+      padding-left: 26px;
+      padding-bottom: 20px;
+      padding-right: 60px;
+      font-size: 20px;
+      line-height: 1;
+      letter-spacing: 2px; }
+      .trip-form__add-country::before {
+        position: absolute;
+        content: "";
+        top: 27px;
+        right: -30px;
+        width: 15px;
+        height: 15px;
+        background-color: #edeff6;
+        border: 1px solid #cbced9;
+        border-radius: 50%; }
+      .trip-form__add-country::after {
+        width: 20px;
+        height: 20px;
+        right: 26px;
+        top: 25px; } }
+  @media (min-width: 1440px) {
+    .trip-form__add-country {
+      width: 730px; }
+      .trip-form__add-country::before {
+        right: -57px; }
+      .trip-form__add-country::after {
+        width: 18px;
+        height: 18px;
+        right: 27px;
+        top: 26px; } }
 
 /* STEP 3*/
 .trip-form__country-label {
