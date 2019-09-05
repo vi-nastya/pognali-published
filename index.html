@@ -91,8 +91,8 @@
           <path d="M3.88 47l.51-.12 66.47-30.61V7.33A6.36 6.36 0 0 0 64.5.97H46.6L2.28 45.59A6.39 6.39 0 0 0 3.88 47z" fill="#ED5565"/><path d="M7.24 1A6.36 6.36 0 0 0 .88 7.36v34.27c0 .915.197 1.819.58 2.65L24.15 1H7.24z" fill="#4758A9"/><path d="M25.1 1h-.95L1.45 44.28c.14.306.304.6.49.88.11.16.22.31.34.46L46.6 1H25.1z" fill="#FFCE54"/><path fill="#FFF" d="M70.87 30.89V16.26L4.4 46.87z"/><path d="M4.4 46.87l-.41.19a6.32 6.32 0 0 0 3.25.9h57.27a6.36 6.36 0 0 0 6.36-6.36V30.9L4.4 46.87z" fill="#57A863"/>
       </symbol>
 
-        <symbol id="flag-germany" viewbox = "0 0 71 48">
-            <path d="M7.27.85A6.36 6.36 0 0 0 .91 7.21v34.27a6.36 6.36 0 0 0 6.36 6.36h17v-47l-17 .01z" fill="#434A54"/><path d="M24.25.85v47H47.6v-47H24.25z" fill="#FFCE54"/><path d="M64.54.85H47.59v47h16.95a6.36 6.36 0 0 0 6.36-6.36V7.21A6.36 6.36 0 0 0 64.54.85z" fill="#ED5565"/>  
+        <symbol id="flag-belgium" viewbox = "0 0 71 48">
+            <path d="M7.27.85A6.36 6.36 0 0 0 .91 7.21v34.27a6.36 6.36 0 0 0 6.36 6.36h17v-47l-17 .01z" fill="#434A54"/><path d="M24.25.85v47H47.6v-47H24.25z" fill="#FFCE54"/><path d="M64.54.85H47.59v47h16.95a6.36 6.36 0 0 0 6.36-6.36V7.21A6.36 6.36 0 0 0 64.54.85z" fill="#ED5565"/>
         </symbol>
 
         <symbol id="flag-france" viewbox = "0 0 71 48">
@@ -100,7 +100,7 @@
         </symbol>
 
           <symbol id="flag-czech" viewbox = "0 0 71 48">
-              <path d="M63.92.55H6.65A6.36 6.36 0 0 0 .29 6.91v17.64h70V6.91A6.36 6.36 0 0 0 63.92.55z" fill="#FFF"/><path d="M.28 41.18a6.36 6.36 0 0 0 6.36 6.36h57.28a6.36 6.36 0 0 0 6.36-6.36V24.55h-70v16.63z" fill="#ED5565"/><path d="M2.19 2.38a6.34 6.34 0 0 0-1.9 4.54v34.27a6.34 6.34 0 0 0 1.95 4.57l23.05-21.21L2.19 2.38z" fill="#4758A9"/>  
+              <path d="M63.92.55H6.65A6.36 6.36 0 0 0 .29 6.91v17.64h70V6.91A6.36 6.36 0 0 0 63.92.55z" fill="#FFF"/><path d="M.28 41.18a6.36 6.36 0 0 0 6.36 6.36h57.28a6.36 6.36 0 0 0 6.36-6.36V24.55h-70v16.63z" fill="#ED5565"/><path d="M2.19 2.38a6.34 6.34 0 0 0-1.9 4.54v34.27a6.34 6.34 0 0 0 1.95 4.57l23.05-21.21L2.19 2.38z" fill="#4758A9"/>
           </symbol>
   </svg>
 
@@ -250,7 +250,7 @@
     <main class="main">
       <section class="intro">
         <div class="inner intro__inner">
-          <h1 class="intro__header">В путешествие с крутыми попутчиками!</h1>
+          <h1 class="intro__header">В&nbsp;путешествие с&nbsp;крутыми попутчиками!</h1>
           <ul class="intro__contact-list">
             <li>
               <a href="tel:8-800-555-86-28" class="intro__contact-link intro__contact-link--phone">
@@ -502,23 +502,11 @@
               </div>
               <div class="companion__details">
                 <ul class="companion__countries">
-                  <li class="companion__countries-flag tooltip" aria-label="Германия">
-                    <img
-                  src="./img/flag-belgium.svg"
-                  class="companion__countries-flag-image"
-                  width="35"
-                  height="34"
-                  alt="Германия"
-                />
+                  <li class="companion__countries-flag tooltip" aria-label="Бельгия">
+                      <svg><use xlink:href="#flag-belgium"></use></svg>
                   </li>
                   <li class="companion__countries-flag tooltip" aria-label="Чехия">
-                    <img
-                  src="./img/flag-czech.svg"
-                  class="companion__countries-flag-image"
-                  width="35"
-                  height="34"
-                  alt="Чехия"
-                />
+                      <svg><use xlink:href="#flag-czech"></use></svg>
                   </li>
                 </ul>
                 <h3 class="companion__name companion__name--online">Петя Демин</h3>
@@ -759,5 +747,3 @@
 
   </body>
 </html>
-
-
